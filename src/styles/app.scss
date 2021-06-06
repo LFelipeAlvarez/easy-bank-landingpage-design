@@ -27,7 +27,7 @@ body {
     background-color: $white;
     position: sticky;
     top: 0;
-    height: 4rem;
+    height: 4.5rem;
     z-index: 5;
 
     &__content {
@@ -328,7 +328,7 @@ body {
         &__link {
             display: block;
             height: 100%;
-            line-height: 4rem;
+            line-height: 4.5rem;
             position: relative;
             color: $grayish-blue;
             transition: color 0.3s ease-in-out;
