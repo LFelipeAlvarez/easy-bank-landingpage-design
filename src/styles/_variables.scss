@@ -1,0 +1,10 @@
+$dark-blue: #2d314d;
+$lime-green: #31d35c;
+$bright-cyan: #2bb7da;
+$gradiant: linear-gradient(90deg, $lime-green 0%, $bright-cyan 100%);
+$marine: mix($bright-cyan, $lime-green, 65%);
+
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
