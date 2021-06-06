@@ -319,9 +319,6 @@ body {
 }
 
 @media (min-width: 992px) {
-  .header {
-    height: 5rem;
-  }
   .header__content {
     width: 80%;
   }
@@ -356,7 +353,7 @@ body {
   .header__link {
     display: block;
     height: 100%;
-    line-height: 5rem;
+    line-height: 4rem;
     position: relative;
     color: #9698a6;
     transition: color 0.3s ease-in-out;
@@ -528,4 +525,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=/src.35105c08.css.map */
+/*# sourceMappingURL=/src.d6571fb6.css.map */
