@@ -102,7 +102,7 @@ body {
 .section {
     padding-top: 3rem;
     padding-bottom: 5rem;
-    min-height: 36rem;
+    min-height: 36.75rem;
     &__content {
         @include flexible(space-between, center, column);
         @include center-width(var(--containers-width));
