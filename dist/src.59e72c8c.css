@@ -63,7 +63,7 @@ body {
   background-color: white;
   position: sticky;
   top: 0;
-  height: 4rem;
+  height: 4.5rem;
   z-index: 5;
 }
 .header__content {
@@ -116,7 +116,7 @@ body {
 }
 .header__link {
   color: #2d314d;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .header__burger-button {
   width: 1rem;
@@ -215,8 +215,9 @@ body {
   border-radius: 5rem;
   background: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
   color: white;
-  width: 10rem;
+  width: 9.3rem;
   font-size: 0.8rem;
+  font-family: "public-sans-bold";
   height: 2.5rem;
   cursor: pointer;
 }
@@ -225,7 +226,7 @@ body {
 }
 
 .card {
-  max-width: 260px;
+  max-width: 255px;
 }
 .card__body {
   margin-top: 1rem;
@@ -320,7 +321,7 @@ body {
 
 @media (min-width: 992px) {
   .header__content {
-    width: 80%;
+    width: 78%;
   }
   .header__menu {
     width: auto;
@@ -353,7 +354,7 @@ body {
   .header__link {
     display: block;
     height: 100%;
-    line-height: 4rem;
+    line-height: 4.5rem;
     position: relative;
     color: #9698a6;
     transition: color 0.3s ease-in-out;
@@ -397,7 +398,7 @@ body {
     align-items: center;
   }
   .section__content {
-    width: 80%;
+    width: 78%;
     gap: 2em;
   }
   .section__title {
@@ -421,7 +422,7 @@ body {
     width: auto;
     margin-top: 0;
     top: -125px;
-    left: 140px;
+    left: 132px;
   }
   .section__cards {
     justify-content: initial;
@@ -431,15 +432,15 @@ body {
   }
   .section--first .section__content {
     gap: 0;
-    width: 90%;
+    width: 88%;
     margin-right: 0;
   }
   .section--first .section__title {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
   }
   .section--first .section__text {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 36%;
+    max-width: 36%;
     margin: 0;
   }
   .section--second .section__content {
@@ -457,11 +458,6 @@ body {
   }
   .card__title {
     font-size: 1.3rem;
-    transition: color 0.3s ease-in-out;
-  }
-  .card__title:hover {
-    color: #2dc1ae;
-    cursor: pointer;
   }
   .card__text {
     font-size: 0.9rem;
@@ -472,14 +468,18 @@ body {
   }
   .card--article .card__title {
     font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  .card--article .card__title:hover {
+    color: #2dc1ae;
+    cursor: pointer;
   }
   .card--article .card__text {
-    font-size: 0.7rem;
     line-height: 1.4em;
   }
 
   .footer__content {
-    width: 80%;
+    width: 78%;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
@@ -525,4 +525,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=/src.d6571fb6.css.map */
+/*# sourceMappingURL=/src.59e72c8c.css.map */
