@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --containers-width: 90%;
+}
+
 @font-face {
   font-family: public-sans;
   src: url("/PublicSans-Regular.0f7cbf5d.ttf");
@@ -71,7 +75,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: var(--containers-width);
   margin-left: auto;
   margin-right: auto;
   height: 100%;
@@ -138,14 +142,14 @@ body {
 .section {
   padding-top: 3rem;
   padding-bottom: 5rem;
-  min-height: 37rem;
+  min-height: 36rem;
 }
 .section__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: var(--containers-width);
   margin-left: auto;
   margin-right: auto;
 }
@@ -215,7 +219,7 @@ body {
   border-radius: 5rem;
   background: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
   color: white;
-  width: 9.3rem;
+  width: 9.2rem;
   font-size: 0.8rem;
   font-family: "public-sans-bold";
   height: 2.5rem;
@@ -226,7 +230,7 @@ body {
 }
 
 .card {
-  max-width: 255px;
+  max-width: 250px;
 }
 .card__body {
   margin-top: 1rem;
@@ -320,9 +324,10 @@ body {
 }
 
 @media (min-width: 992px) {
-  .header__content {
-    width: 78%;
+  :root {
+    --containers-width: 77%;
   }
+
   .header__menu {
     width: auto;
     min-height: auto;
@@ -398,7 +403,6 @@ body {
     align-items: center;
   }
   .section__content {
-    width: 78%;
     gap: 2em;
   }
   .section__title {
@@ -421,7 +425,7 @@ body {
     position: absolute;
     width: auto;
     margin-top: 0;
-    top: -125px;
+    top: -118px;
     left: 132px;
   }
   .section__cards {
@@ -432,7 +436,7 @@ body {
   }
   .section--first .section__content {
     gap: 0;
-    width: 88%;
+    width: calc(var(--containers-width) + ((100% - var(--containers-width)) / 2));
     margin-right: 0;
   }
   .section--first .section__title {
@@ -460,11 +464,11 @@ body {
     font-size: 1.3rem;
   }
   .card__text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.55rem;
   }
   .card--article .card__body {
-    padding: 1.4em;
+    padding: 1.3em;
   }
   .card--article .card__title {
     font-size: 1rem;
@@ -479,7 +483,7 @@ body {
   }
 
   .footer__content {
-    width: 78%;
+    width: var(--containers-width);
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
@@ -525,4 +529,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=/src.59e72c8c.css.map */
+/*# sourceMappingURL=/src.bbec3520.css.map */

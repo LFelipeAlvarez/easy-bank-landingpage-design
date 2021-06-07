@@ -32,7 +32,7 @@ body {
 
     &__content {
         @include flexible(space-between, center);
-        @include center-width(90%);
+        @include center-width(var(--containers-width));
         height: 100%;
     }
 
@@ -102,10 +102,10 @@ body {
 .section {
     padding-top: 3rem;
     padding-bottom: 5rem;
-    min-height: 37rem;
+    min-height: 36rem;
     &__content {
         @include flexible(space-between, center, column);
-        @include center-width(90%);
+        @include center-width(var(--containers-width));
     }
 
     &__hero {
@@ -180,7 +180,7 @@ body {
     border-radius: 5rem;
     background: $gradiant;
     color: $white;
-    width: 9.3rem;
+    width: 9.2rem;
     font-size: 0.8rem;
     font-family: "public-sans-bold";
     height: 2.5rem;
@@ -192,7 +192,7 @@ body {
 }
 
 .card {
-    max-width: 255px;
+    max-width: 250px;
 
     &__body {
         margin-top: 1rem;
@@ -293,11 +293,10 @@ body {
 }
 
 @media (min-width: 992px) {
+    :root {
+        --containers-width: 77%;
+    }
     .header {
-        &__content {
-            width: 78%;
-        }
-
         &__menu {
             width: auto;
             min-height: auto;
@@ -371,7 +370,6 @@ body {
         @include flexible(initial, center);
 
         &__content {
-            width: 78%;
             gap: 2em;
         }
 
@@ -398,7 +396,7 @@ body {
             position: absolute;
             width: auto;
             margin-top: 0;
-            top: -125px;
+            top: -118px;
             left: 132px;
         }
 
@@ -413,7 +411,7 @@ body {
         &--first {
             .section__content {
                 gap: 0;
-                width: 88%;
+                width: calc(var(--containers-width) + ((100% - var(--containers-width)) / 2));
                 margin-right: 0;
             }
 
@@ -455,13 +453,13 @@ body {
         }
 
         &__text {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             line-height: 1.55rem;
         }
 
         &--article {
             .card__body {
-                padding: 1.4em;
+                padding: 1.3em;
             }
 
             .card__title {
@@ -481,7 +479,7 @@ body {
 
     .footer {
         &__content {
-            @include center-width(78%);
+            @include center-width(var(--containers-width));
             flex-direction: row;
             justify-content: space-between;
             padding: 2em 0;

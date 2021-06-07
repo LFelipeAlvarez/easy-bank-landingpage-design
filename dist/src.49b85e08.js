@@ -131,4 +131,4 @@ $burgerButton.addEventListener('click', function () {
   $burgerButton.classList.toggle('header__burger-button--active');
 });
 },{"./styles/app.scss":"OXm4"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.378604e3.js.map
+//# sourceMappingURL=/src.49b85e08.js.map
